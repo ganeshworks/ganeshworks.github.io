@@ -104,4 +104,4 @@ sr.reveal('.contact__input',{interval: 200});
 
 
 
->>>>>>> 0efd304 (Add files via upload)
+// >>>>>>> 0efd304 (Add files via upload)

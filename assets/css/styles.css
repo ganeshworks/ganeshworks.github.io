@@ -1,17 +1,14 @@
-/* <<<<<<< HEAD */
-/*===== GOOGLE FONTS =====*/
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-/*===== VARIABLES CSS =====*/
+
 :root {
   --header-height: 3rem;
   --font-semi: 600;
-  /*===== Colores =====*/
-  /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
-  /* HSL color mode */
+ 
   --hue-color: 224;
   --first-color: hsl(238, 48%, 26%);
   --second-color: hsl(var(--hue-color), 56%, 12%);
-  /*===== Fuente y tipografia =====*/
+  
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
@@ -35,7 +32,7 @@
   }
 }
 
-/*===== BASE =====*/
+
 *, ::before, ::after {
   box-sizing: border-box;
 }
@@ -71,7 +68,7 @@ img {
   display: block;
 }
 
-/*===== CLASS CSS ===== */
+
 .section-title {
   position: relative;
   font-size: var(--h2-font-size);
@@ -99,7 +96,7 @@ img {
   padding-bottom: 2rem;
 }
 
-/*===== LAYOUT =====*/
+
 .bd-grid {
   max-width: 1024px;
   display: grid;
@@ -117,7 +114,7 @@ img {
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
 
-/*===== NAV =====*/
+
 .nav {
   height: var(--header-height);
   display: flex;
@@ -344,7 +341,6 @@ img {
   
 }
 
-/* ===== WORK =====*/
 .work__container {
   row-gap: 2rem;
 }
@@ -360,7 +356,6 @@ img {
   transform: scale(1.1);
 }
 
-/* ===== CONTACT =====*/
 .contact__input {
   width: 100%;
   font-size: var(--normal-font-size);
@@ -380,7 +375,7 @@ img {
   margin-left: auto;
 }
 
-/* ===== FOOTER =====*/
+
 .footer {
   background-color: var(--second-color);
   color: #fff;
@@ -404,7 +399,6 @@ img {
   font-size: var(--smaller-font-size);
 }
 
-/* ===== MEDIA QUERIES=====*/
 @media screen and (max-width: 320px) {
   .home {
     row-gap: 2rem;
@@ -446,8 +440,7 @@ img {
     column-gap: 2rem;
     padding-top: 2rem;
   }
-  /* Contact Section Styles */
-/* Contact Section Styles */
+
 .contact {
   padding: 1.5rem 0; /* Reduced padding for compact height */
   background-color: #e9f1fa; /* Slightly tinted background for contrast */
@@ -500,7 +493,6 @@ img {
   outline: none;
 }
 
-/* Contact Button Styling */
 .contact__button {
   background-color: #007bff;
   color: #fff;
@@ -628,10 +620,9 @@ img {
     width: 450px;
   }
 }
-/* ======= */
-/*===== GOOGLE FONTS =====*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-/*===== VARIABLES CSS =====*/
+
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"); */
+
 :root{
   --header-height: 3rem;
   --font-semi: 600;
@@ -1079,4 +1070,4 @@ img{
     right: 10%;
   }
 }
-/* >>>>>>> 0efd304 (Add files via upload) */
+
