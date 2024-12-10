@@ -5,6 +5,7 @@
 :root{
     --header-height: 3rem;
     --font-semi: 600;
+// <<<<<<< HEAD
     
     /*===== Colores =====*/
     /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
@@ -14,10 +15,23 @@
     --second-color: hsl(var(--hue-color), 56%, 12%);
 
     /*===== Fuente y tipografia =====*/
+// =======
+}
+
+/*===== Colores =====*/
+:root{
+    --first-color: #4070F4;
+    --second-color: #0E2431;
+}
+
+/*===== Fuente y tipografia =====*/
+:root{
+// >>>>>>> 0efd304 (Add files via upload)
     --body-font: 'Poppins', sans-serif;
 
     --big-font-size: 2rem;
     --h2-font-size: 1.25rem;
+// <<<<<<< HEAD
     --normal-font-size: .938rem;
     --smaller-font-size: .75rem;
 
@@ -39,6 +53,35 @@
     }
 }
 
+// =======
+    --normal-font-size: 0.938rem;
+
+    @media screen and (min-width: 768px){
+        --big-font-size: 3.5rem;
+        --h2-font-size: 2rem;
+        --normal-font-size: 1rem;
+    }
+}
+
+/*===== Margenes =====*/
+:root{
+    --mb-1: 0.5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+}
+
+/*===== z index =====*/
+:root{
+    --z-back: -10;
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+// >>>>>>> 0efd304 (Add files via upload)
 /*===== BASE =====*/
 *,::before,::after{
     box-sizing: border-box;
@@ -66,7 +109,11 @@ a{
 img{
     max-width: 100%;
     height: auto;
+// <<<<<<< HEAD
     display: block;
+// =======
+    display: block; // borra los espacios en blanco
+// >>>>>>> 0efd304 (Add files via upload)
 }
 
 /*===== CLASS CSS ===== */
@@ -99,6 +146,12 @@ img{
 .bd-grid{
     max-width: 1024px;
     display: grid;
+// <<<<<<< HEAD
+// =======
+    grid-template-columns: 100%;
+    grid-column-gap: 2rem;
+    width: calc(100% - 2rem);
+// >>>>>>> 0efd304 (Add files via upload)
     margin-left: var(--mb-2);
     margin-right: var(--mb-2);
 }
@@ -121,7 +174,11 @@ img{
     font-weight: var(--font-semi);
 
     &__menu{
+// <<<<<<< HEAD
         @media screen and (max-width: 767px){
+// =======
+        @media screen and (max-width: 768px){
+// >>>>>>> 0efd304 (Add files via upload)
             position: fixed;
             top: var(--header-height);
             right: -100%;
@@ -163,7 +220,11 @@ img{
     }
 }
 /*Active menu*/
+// <<<<<<< HEAD
 .active-link::after{
+// =======
+.active::after{
+// >>>>>>> 0efd304 (Add files via upload)
     position: absolute;
     content: '';
     width: 100%;
@@ -180,9 +241,14 @@ img{
 
 /*===== HOME =====*/
 .home{
+// <<<<<<< HEAD
     position: relative;
     row-gap: 5rem;
     padding: 4rem 0 5rem;
+// =======
+    height: calc(100vh - 3rem);
+    row-gap: 1rem;
+// >>>>>>> 0efd304 (Add files via upload)
 
     &__data{
         align-self: center;
@@ -214,6 +280,7 @@ img{
         position: absolute;
         right: 0;
         bottom: 0;
+// <<<<<<< HEAD
         width: 260px;
     }
     &__blob{
@@ -222,6 +289,9 @@ img{
         &-img{
             width: 360px;
         }
+// =======
+        width: 295px;
+// >>>>>>> 0efd304 (Add files via upload)
     }
 }
 
@@ -233,7 +303,10 @@ img{
     padding: .75rem 2.5rem;
     font-weight: var(--font-semi);
     border-radius: .5rem; 
+// <<<<<<< HEAD
     transition: .3s;
+// =======
+// >>>>>>> 0efd304 (Add files via upload)
 
     &:hover{
         box-shadow: 0px 10px 36px rgba(0,0,0,.15);
@@ -329,6 +402,10 @@ img{
         
         & img{
             transition: 1s;
+// <<<<<<< HEAD
+// =======
+            cursor: pointer;
+// >>>>>>> 0efd304 (Add files via upload)
 
             &:hover{
                 transform: scale(1.1);
@@ -379,6 +456,7 @@ img{
         color: #fff;
         margin: 0 var(--mb-2);
     }
+// <<<<<<< HEAD
     &__copy{
         font-size: var(--smaller-font-size);
     }
@@ -445,6 +523,12 @@ img{
 }
 
 @media screen and (min-width: 768px){
+// =======
+}
+
+/* ===== MEDIA QUERIES=====*/
+@media screen and(min-width: 768px){
+// >>>>>>> 0efd304 (Add files via upload)
     body{
         margin: 0;
     }
@@ -463,7 +547,11 @@ img{
     }
 
     .nav{
+// <<<<<<< HEAD
         height: calc(var(--header-height) + 1.5rem);
+// =======
+        height: calc(var(--header-height) + 1rem);
+// >>>>>>> 0efd304 (Add files via upload)
         &__list{
             display: flex;
             padding-top: 0;
@@ -480,17 +568,44 @@ img{
         }
     }
     .home{
+// <<<<<<< HEAD
         padding: 8rem 0 2rem;
         
         &__img{
             width: 400px;
             bottom: 10%;
+// =======
+        height: 100vh;
+        &__data{
+            align-self: flex-end;
+        }
+        &__social{
+            padding-top: 0;
+            padding-bottom: 2.5rem;
+            flex-direction: row;
+            align-self: flex-end;
+
+            &-icon{
+                margin-bottom: 0;
+                margin-right: var(--mb-4);
+            }
+        }
+        &__img{
+            width: 457px;
+            bottom: 15%;
+// >>>>>>> 0efd304 (Add files via upload)
         }
     }
 
     .about{
         &__container{
+// <<<<<<< HEAD
            padding-top: 2rem;
+// =======
+            grid-template-columns: repeat(2,1fr);
+            align-items: center;
+            text-align: initial;
+// >>>>>>> 0efd304 (Add files via upload)
         }
         &__img{
             & img{
@@ -498,6 +613,7 @@ img{
             }
         }
     }
+// <<<<<<< HEAD
     .skills__container{
         grid-template-columns: repeat(2,1fr);
         column-gap: 2rem;
@@ -511,11 +627,39 @@ img{
 }
 
 @media screen and (min-width: 992px){
+// =======
+    .skills{
+        &__container{
+            grid-template-columns: repeat(2,1fr);
+            align-items: center;
+            text-align: initial;
+        }
+    }
+    .work{
+        &__container{
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2, 1fr);
+            column-gap: 2rem;
+        }
+    }
+    .contact{
+        &__form{
+            width: 360px;
+        }
+        &__container{
+            justify-items: center;
+        }
+    }
+
+}
+@media screen and(min-width: 1024px){
+>>>>>>> 0efd304 (Add files via upload)
     .bd-grid{
         margin-left: auto;
         margin-right: auto;
     }
     .home{
+// <<<<<<< HEAD
         padding: 10rem 0 2rem;
 
         &__img{
@@ -523,3 +667,10 @@ img{
         }
     }
 }
+// =======
+        &__img{
+            right: 10%;
+        }
+    }
+}
+// >>>>>>> 0efd304 (Add files via upload)
