@@ -214,16 +214,20 @@ img {
 }
 .home__img {
   position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 260px;
+  top: 200px; /* Moves the image upwards */
+  right: -10px; /* Moves the image to the right */
+  width: 260px; /* Keep your original image size */
+  z-index: -5; /* Ensures it stays below other elements */
 }
+
 .home__blob {
   fill: var(--first-color);
 }
+
 .home__blob-img {
-  width: 360px;
+  width: 300px; /* Reduce size slightly for better fit */
 }
+
 
 /*BUTTONS*/
 .button {
@@ -742,7 +746,7 @@ img{
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #eacda7;
+  background-color: #5ab8ea;
   box-shadow: 0 1px 4px rgba(146,161,176,.15);
 }
 
