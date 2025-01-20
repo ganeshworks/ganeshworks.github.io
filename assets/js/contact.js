@@ -5,19 +5,15 @@ document.addEventListener("DOMContentLoaded", function () {
         const email = "ganeshkodimoju52@gmail.com";
         const subject = "Contact Request For Ganesh K";
 
-        // Provide Gmail and Outlook options
-        const userChoice = confirm("Do you want to use Gmail? Click 'OK' for Gmail or 'Cancel' for Outlook.");
+        // Ask user for Gmail option
+        const userChoice = confirm("Do you want to use Gmail? Click 'OK' for Gmail or 'Cancel' to close.");
 
-        let mailLink;
         if (userChoice) {
             // Gmail compose link
-            mailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}`;
-        } else {
-            // Outlook compose link
-            mailLink = `https://outlook.office.com/mail/deeplink/compose?to=${email}&subject=${encodeURIComponent(subject)}`;
-        }
-
-        // Open the selected mail service in a new tab
-        window.open(mailLink, '_blank');
+            const mailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}`;
+            // Open Gmail in a new tab
+            window.open(mailLink, '_blank');
+        } 
+        // If user clicks "Cancel", do nothing
     });
 });
