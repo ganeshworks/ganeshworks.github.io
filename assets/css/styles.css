@@ -264,6 +264,111 @@ img {
   margin-bottom: 10px;  /* Adds some spacing below the title */
 }
 
+/* Experience container with auto-scroll functionality */
+.experience-container {
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically if needed */
+  flex-wrap: wrap; /* Ensures responsiveness */
+  gap: 20px; /* Space between cards */
+  max-width: 100%; /* Prevents excessive stretching */
+  margin: auto; /* Centers the container */
+}
+
+.experience-card {
+  flex: 1 1 300px; /* Makes cards flexible but with a min width */
+  max-width: 350px; /* Controls card width */
+  text-align: center;
+  height: 180px;
+   /* Increases card height */
+  padding: 20px; /* Ensures text is aligned */
+}
+
+
+.experience-card:hover {
+  transform: translateY(-5px);
+}
+
+.experience-card h2 {
+  white-space: normal; /* Allow text to wrap */
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.experience-card a {
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px 0;
+}
+
+.role {
+  font-weight: bold;
+  display: block;
+  margin-top: 8px;
+  font-size: 0.9rem;
+}
+
+/* Navigation buttons for the slider */
+.experience-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.experience-nav button {
+  border: none;
+  background-color: var(--first-color);
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.experience-nav button:hover {
+  background-color: #2a50c4;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .experience-container {
+    padding: 15px 0;
+  }
+  
+  .experience-card {
+    min-width: 220px;
+    width: 85%;
+    padding: 15px;
+  }
+  
+  .experience-card h2 {
+    font-size: 0.9rem;
+  }
+  
+  .role {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .experience-card {
+    min-width: 200px;
+    width: 85%;
+    padding: 12px;
+  }
+  
+  .experience-card h2 {
+    font-size: 0.85rem;
+  }
+}
+
 /* Center the paragraph description and adjust font size */
 .section-description {
   text-align: center;
