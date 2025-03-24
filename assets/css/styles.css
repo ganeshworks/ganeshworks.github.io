@@ -8,6 +8,8 @@
   --hue-color: 224;
   --first-color: hsl(180, 48%, 26%);
   --second-color: hsl(var(--hue-color), 56%, 12%); 
+  background-color: #021635ea; /* Light Blue */
+  color: white;
   /* --second-color: hsl(182, 66%, 52%); */
   
   --body-font: "Poppins", sans-serif;
@@ -46,28 +48,33 @@ body {
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  color: var(--second-color);
+  /* color: var(--second-color); */
+  color: white;
   /* color: #b7bfc8; */
 }
 
 h1, h2, p {
   margin: 0;
+  color: white;
 }
 
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
+  color: white;
 }
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 img {
   max-width: 100%;
   height: auto;
   display: block;
+  color: white;
 }
 
 
@@ -78,6 +85,7 @@ img {
   margin-top: var(--mb-2);
   margin-bottom: var(--mb-4);
   text-align: center;
+  color: white;
 }
 
 .section-title::after {
@@ -90,13 +98,15 @@ img {
   margin: auto;
   top: 2rem;  /* Adjust vertical spacing */
   background-color: var(--first-color);
-  
+  color: white;
 }
 
 
 .section {
   padding-top: 3rem;
   padding-bottom: 2rem;
+  color: white;
+
 }
 
 
@@ -105,6 +115,8 @@ img {
   display: grid;
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
+  color: white;
+
 }
 
 .l-header {
@@ -116,6 +128,8 @@ img {
   z-index: var(--z-fixed);
   background-color: #ffffff;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+  color: white;
+
 }
 
 
@@ -125,6 +139,8 @@ img {
   justify-content: space-between;
   align-items: center;
   font-weight: var(--font-semi);
+  color: white;
+
 }
 @media screen and (max-width: 767px) {
   .nav__menu {
@@ -136,10 +152,14 @@ img {
     padding: 2rem;
     background-color: var(--second-color);
     transition: 0.5s;
+    color: white;
+
   }
 }
 .nav__item {
   margin-bottom: var(--mb-4);
+  color: white;
+
 }
 .nav__link {
   position: relative;
@@ -199,19 +219,21 @@ img {
 .home__title-color {
   color: var(--first-color);
 }
-.home__social {
-  display: flex;
-  flex-direction: column;
-}
 .home__social-icon {
   width: max-content;
   margin-bottom: var(--mb-2);
   font-size: 1.5rem;
-  color: var(--second-color);
+  color: white !important; /* Force white color */
 }
+
 .home__social-icon:hover {
-  color: var(--first-color);
+  color: white !important; /* Ensure hover color remains white */
 }
+
+.home__social i {
+  color: white !important; /* Apply white color directly to icons */
+}
+
 .home__img {
   position: absolute;
   top: 190px; /* Moves the image upwards */
@@ -470,6 +492,7 @@ img {
 }
 
 .contact__input {
+  color: black;
   width: 100%;
   font-size: var(--normal-font-size);
   font-weight: var(--font-semi);
