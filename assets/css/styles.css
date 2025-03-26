@@ -301,7 +301,7 @@ img {
   flex: 1 1 300px; /* Makes cards flexible but with a min width */
   max-width: 350px; /* Controls card width */
   text-align: center;
-  height: 180px;
+  height: 200px;
    /* Increases card height */
   padding: 20px; /* Ensures text is aligned */
 }

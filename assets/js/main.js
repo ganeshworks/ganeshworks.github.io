@@ -202,3 +202,23 @@ document.addEventListener("DOMContentLoaded", function () {
   // Scroll every 5 seconds
   setInterval(scrollCards, 5000);
 });
+
+function calculateDuration(start, end) {
+    let startDate = new Date(start);
+    let endDate = end === "Present" ? new Date() : new Date(end);
+
+    let years = endDate.getFullYear() - startDate.getFullYear();
+    let months = endDate.getMonth() - startDate.getMonth();
+
+    if (months < 0) {
+        years--;
+        months += 12;
+    }
+
+    return `${years} year${years !== 1 ? 's' : ''} ${months} month${months !== 1 ? 's' : ''}`;
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("hallmark-duration").innerText = calculateDuration("2019-08-01", "2022-05-01");
+    document.getElementById("veramasa-duration").innerText = calculateDuration("2022-06-01", "Present");
+});
