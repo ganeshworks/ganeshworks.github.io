@@ -269,12 +269,24 @@ img {
 .about__container {
   row-gap: 2rem;
   text-align: center;
+  font-weight: (var(--h2-font-size));
 }
 .about__subtitle {
   margin-bottom: var(--mb-2);
   text-decoration: underline;
-  
+  font-weight: var(--h2-font-size);
+  font-weight: bold;
+
+       /* Increases the text size (you can adjust the px value) */
 }
+.about__text {
+  font-weight: bold;     /* Makes the text bold */
+  font-size: 18px;       /* Adjust the size as needed */
+  line-height: 1.5;      /* Improves readability */
+  color: #f5ebeb;           /* Optional: Set a strong, readable color */
+}
+
+
 /* Center the section-title1 and description */
 .section-title1 {
   text-decoration: underline;
